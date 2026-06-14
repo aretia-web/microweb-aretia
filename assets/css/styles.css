@@ -429,3 +429,52 @@
     *{animation:none !important; transition:none !important;}
     html{scroll-behavior:auto;}
   }
+
+  /* Extras */
+.extras{margin-top:32px;}
+.extras-label{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.78rem;
+  text-transform:uppercase;letter-spacing:0.1em;
+  color:rgba(26,29,41,0.5);
+  margin-bottom:14px;
+}
+.extra-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:24px 28px;
+  background:#fff;
+}
+.extra-info h4{
+  font-family:'Fraunces',serif;
+  font-weight:600;
+  font-size:1.1rem;
+  margin-bottom:6px;
+}
+.extra-info p{
+  color:rgba(26,29,41,0.6);
+  font-size:0.9rem;
+  max-width:48ch;
+}
+.extra-price{
+  font-family:'Fraunces',serif;
+  font-weight:600;
+  font-size:1.8rem;
+  white-space:nowrap;
+  text-align:right;
+}
+.extra-price span{
+  font-family:'Inter',sans-serif;
+  font-size:0.85rem;font-weight:500;
+  color:rgba(26,29,41,0.55);
+  display:block;
+}
+
+@media (max-width:600px){
+  .extra-row{flex-direction:column;align-items:flex-start;text-align:left;}
+  .extra-price{text-align:left;}
+}
