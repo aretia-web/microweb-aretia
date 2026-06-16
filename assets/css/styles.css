@@ -59,6 +59,7 @@
   header.hero{
     padding:96px 0 64px;
     border-bottom:1px solid var(--line);
+    text-align:center;
   }
   .eyebrow{
     font-family:'JetBrains Mono',monospace;
@@ -67,7 +68,7 @@
     text-transform:uppercase;
     letter-spacing:0.12em;
     margin-bottom:20px;
-    display:flex;align-items:center;gap:10px;
+    display:flex;align-items:center;justify-content:center;gap:10px;
   }
   .eyebrow::before{
     content:'';display:inline-block;width:8px;height:8px;
@@ -79,7 +80,7 @@
     font-size:clamp(2.4rem, 6vw, 4.4rem);
     line-height:1.05;
     letter-spacing:-0.01em;
-    max-width:14ch;
+    max-width:100%;
     margin-bottom:24px;
   }
   h1 em{
@@ -90,10 +91,10 @@
   .hero-sub{
     font-size:1.15rem;
     color:rgba(26,29,41,0.7);
-    max-width:46ch;
-    margin-bottom:36px;
+    max-width:56ch;
+    margin:0 auto 36px;
   }
-  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:64px;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:64px;justify-content:center;}
   .btn{
     display:inline-flex;align-items:center;gap:8px;
     padding:14px 28px;
@@ -234,8 +235,15 @@
 
   /* ===== SECTIONS ===== */
   section{padding:80px 0;border-bottom:1px solid var(--line);}
-  .section-head{margin-bottom:48px;max-width:60ch;}
-  .section-head .eyebrow{margin-bottom:14px;}
+  .section-head{
+    margin-bottom:48px;
+    text-align:center;
+    max-width:100%;
+  }
+  .section-head .eyebrow{
+    margin-bottom:14px;
+    justify-content:center;
+  }
   .section-head h2{
     font-family:'Fraunces',serif;
     font-weight:600;
@@ -243,7 +251,12 @@
     letter-spacing:-0.01em;
     margin-bottom:14px;
   }
-  .section-head p{color:rgba(26,29,41,0.65);font-size:1.05rem;}
+  .section-head p{
+    color:rgba(26,29,41,0.65);
+    font-size:1.05rem;
+    max-width:60ch;
+    margin:0 auto;
+  }
 
   /* Services grid */
   .services{
@@ -357,6 +370,55 @@
     .pricing-card{grid-template-columns:1fr;}
   }
 
+  /* Extras */
+  .extras{margin-top:32px;}
+  .extras-label{
+    font-family:'JetBrains Mono',monospace;
+    font-size:0.78rem;
+    text-transform:uppercase;letter-spacing:0.1em;
+    color:rgba(26,29,41,0.5);
+    margin-bottom:14px;
+  }
+  .extra-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:24px 28px;
+    background:#fff;
+  }
+  .extra-info h4{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:1.1rem;
+    margin-bottom:6px;
+  }
+  .extra-info p{
+    color:rgba(26,29,41,0.6);
+    font-size:0.9rem;
+    max-width:48ch;
+  }
+  .extra-price{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:1.8rem;
+    white-space:nowrap;
+    text-align:right;
+  }
+  .extra-price span{
+    font-family:'Inter',sans-serif;
+    font-size:0.85rem;font-weight:500;
+    color:rgba(26,29,41,0.55);
+    display:block;
+  }
+
+  @media (max-width:600px){
+    .extra-row{flex-direction:column;align-items:flex-start;text-align:left;}
+    .extra-price{text-align:left;}
+  }
+
   /* Contact */
   .contact-grid{
     display:grid;
@@ -429,52 +491,3 @@
     *{animation:none !important; transition:none !important;}
     html{scroll-behavior:auto;}
   }
-
-  /* Extras */
-.extras{margin-top:32px;}
-.extras-label{
-  font-family:'JetBrains Mono',monospace;
-  font-size:0.78rem;
-  text-transform:uppercase;letter-spacing:0.1em;
-  color:rgba(26,29,41,0.5);
-  margin-bottom:14px;
-}
-.extra-row{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:24px;
-  border:1px solid var(--line);
-  border-radius:10px;
-  padding:24px 28px;
-  background:#fff;
-}
-.extra-info h4{
-  font-family:'Fraunces',serif;
-  font-weight:600;
-  font-size:1.1rem;
-  margin-bottom:6px;
-}
-.extra-info p{
-  color:rgba(26,29,41,0.6);
-  font-size:0.9rem;
-  max-width:48ch;
-}
-.extra-price{
-  font-family:'Fraunces',serif;
-  font-weight:600;
-  font-size:1.8rem;
-  white-space:nowrap;
-  text-align:right;
-}
-.extra-price span{
-  font-family:'Inter',sans-serif;
-  font-size:0.85rem;font-weight:500;
-  color:rgba(26,29,41,0.55);
-  display:block;
-}
-
-@media (max-width:600px){
-  .extra-row{flex-direction:column;align-items:flex-start;text-align:left;}
-  .extra-price{text-align:left;}
-}
