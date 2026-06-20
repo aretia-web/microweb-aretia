@@ -1,254 +1,239 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Microweb — Webs simples para negocios reales</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microweb — Webs simples para negocios reales</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
 <body>
 
-  <nav>
-    <div class="wrap">
-      <div class="logo">micro<span>web</span></div>
-      <div class="links">
-        <a href="#servicios">Servicios</a>
-        <a href="#proceso">Proceso</a>
-        <a href="#precio">Precio</a>
-        <a href="#contacto" class="nav-cta">Hablemos</a>
-      </div>
+<nav>
+  <div class="wrap">
+    <div class="logo">micro<span>web</span></div>
+    <button class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <div class="links">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#precio">Precio</a>
+      <a href="#contacto" class="nav-cta">Hablemos</a>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <header class="hero">
-    <div class="wrap">
-      <div class="eyebrow">Desarrollo web · Sevilla</div>
-      <h1>Tu negocio <em>ya existe</em>.<br>Que se vea online también.</h1>
-      <p class="hero-sub">
-        Diseñamos y programamos la web de tu negocio en menos de una semana:
-        simple, rápida, y lista para que tus clientes te encuentren, vean tus
-        horarios y te escriban directamente.
-      </p>
-      <div class="hero-ctas">
-        <a href="#contacto" class="btn btn-primary">Pedir mi web →</a>
-        <a href="#servicios" class="btn btn-secondary">Ver qué incluye</a>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Desarrollo web · Sevilla</div>
+    <h1>Tu negocio <em>ya existe</em>.<br>Que se vea online también.</h1>
+    <p class="hero-sub">
+      Diseñamos y programamos la web de tu negocio en menos de una semana:
+      simple, rápida, y lista para que tus clientes te encuentren, vean tus
+      horarios y te escriban directamente.
+    </p>
+    <div class="hero-ctas">
+      <a href="#contacto" class="btn btn-primary">Pedir mi web →</a>
+      <a href="#servicios" class="btn btn-secondary">Ver qué incluye</a>
+    </div>
+
+    <!-- SIGNATURE ELEMENT: before/after toggle -->
+    <div class="demo-frame">
+      <div class="demo-toggle-bar">
+        <button class="active" data-view="before">sin-web.local</button>
+        <button data-view="after">tunegocio.com</button>
       </div>
-
-      <!-- SIGNATURE ELEMENT: before/after toggle -->
-      <div class="demo-frame">
-        <div class="demo-toggle-bar">
-          <button class="active" data-view="before">sin-web.local</button>
-          <button data-view="after">tunegocio.com</button>
+      <div class="demo-stage">
+        <div class="demo-view active" id="view-before">
+          <div class="no-web">
+            <div class="icon">📵</div>
+            <h3>Así te encuentran ahora</h3>
+            <ul>
+              <li>Solo apareces si alguien te conoce de antes</li>
+              <li>Tus horarios están solo en un cartel en la puerta</li>
+              <li>Para reservar, tienen que llamarte por teléfono</li>
+              <li>En Google, sale primero tu competencia</li>
+            </ul>
+          </div>
         </div>
-        <div class="demo-stage">
-          <div class="demo-view active" id="view-before">
-            <div class="no-web">
-              <div class="icon">📵</div>
-              <h3>Así te encuentran ahora</h3>
-              <ul>
-                <li>Solo apareces si alguien te conoce de antes</li>
-                <li>Tus horarios están solo en un cartel en la puerta</li>
-                <li>Para reservar, tienen que llamarte por teléfono</li>
-                <li>En Google, sale primero tu competencia</li>
-              </ul>
+        <div class="demo-view" id="view-after">
+          <div class="mockup">
+            <div class="mockup-nav">
+              Bella Studio <span>tunegocio.com</span>
+            </div>
+            <div class="mockup-hero">
+              <h4>Bella Studio — Peluquería y estética</h4>
+              <p>Calle Mayor 12, Sevilla · Lun–Sáb 9:00–20:00</p>
+              <div class="mbtn">Reservar por WhatsApp</div>
+            </div>
+            <div class="mockup-rows">
+              <div><strong>Servicios</strong>Corte, color, tratamientos y manicura.</div>
+              <div><strong>Ubicación</strong>Mapa integrado y cómo llegar en bus o coche.</div>
+              <div><strong>Opiniones</strong>Reseñas reales de clientes destacadas.</div>
             </div>
           </div>
-          <div class="demo-view" id="view-after">
-            <div class="mockup">
-              <div class="mockup-nav">
-                Bella Studio <span>tunegocio.com</span>
-              </div>
-              <div class="mockup-hero">
-                <h4>Bella Studio — Peluquería y estética</h4>
-                <p>Calle Mayor 12, Sevilla · Lun–Sáb 9:00–20:00</p>
-                <div class="mbtn">Reservar por WhatsApp</div>
-              </div>
-              <div class="mockup-rows">
-                <div><strong>Servicios</strong>Corte, color, tratamientos y manicura.</div>
-                <div><strong>Ubicación</strong>Mapa integrado y cómo llegar en bus o coche.</div>
-                <div><strong>Opiniones</strong>Reseñas reales de clientes destacadas.</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <section id="servicios">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Qué hacemos</div>
-        <h2>Una web. Hecha bien. Sin complicaciones.</h2>
-        <p>Nos centramos en un único producto: una landing page profesional, adaptada a móvil, que cubre exactamente lo
-          que un negocio local necesita para empezar a recibir clientes online.</p>
+<section id="servicios">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Qué hacemos</div>
+      <h2>Una web. Bien hecha. Sin complicaciones.</h2>
+      <p>Diseñamos una landing page profesional, optimizada para todos los dispositivos y enfocada en ofrecer a los negocios locales una presencia online efectiva.</p>
+    </div>
+    <div class="services">
+      <div class="service-card">
+        <span class="tag">Diseño</span>
+        <h3>A tu medida, no una plantilla</h3>
+        <p>Colores, servicios y fotos de tu negocio. Cada web se diseña desde cero para que parezca tuya, no de una plataforma genérica.</p>
       </div>
-      <div class="services">
-        <div class="service-card">
-          <span class="tag">Diseño</span>
-          <h3>A tu medida, no una plantilla</h3>
-          <p>Colores, tipografía y fotos de tu negocio. Cada web se diseña desde cero para que parezca tuya, no de una
-            plataforma genérica.</p>
+      <div class="service-card">
+        <span class="tag">Funcional</span>
+        <h3>Botón directo a WhatsApp</h3>
+        <p>Tus clientes pueden escribirte o reservar con un solo toque, sin formularios eternos ni llamadas perdidas.</p>
+      </div>
+      <div class="service-card">
+        <span class="tag">Visible</span>
+        <h3>Mapa, horario y ubicación</h3>
+        <p>Integramos Google Maps y tus horarios reales para que la gente sepa cuándo y dónde encontrarte.</p>
+      </div>
+      <div class="service-card">
+        <span class="tag">Rápida</span>
+        <h3>Carga en menos de 2 segundos</h3>
+        <p>Código ligero y optimizado. Nada de plugins pesados que hagan esperar a tus clientes.</p>
+      </div>
+      <div class="service-card">
+        <span class="tag">Móvil</span>
+        <h3>Pensada para el móvil primero</h3>
+        <p>Más del 80% de las visitas llegan desde el móvil. Tu web se ve perfecta ahí, siempre.</p>
+      </div>
+      <div class="service-card">
+        <span class="tag">Tuya</span>
+        <h3>Tu dominio, tus datos</h3>
+        <p>Te ayudamos a registrar tu propio dominio (tunegocio.com) y la web queda siempre bajo tu control.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proceso">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Cómo trabajamos</div>
+      <h2>De la idea a tu web online, en 4 pasos</h2>
+      <p>Un proceso corto y directo. Nosotros nos encargamos de todo lo técnico, tú solo nos cuentas cómo es tu negocio.</p>
+    </div>
+    <div class="process">
+      <div class="step">
+        <div class="num">01</div>
+        <div class="content">
+          <h3>Nos cuentas tu negocio</h3>
+          <p>Una breve llamada o mensaje: a qué te dedicas, qué servicios ofreces, horarios y qué quieres que la gente vea primero.</p>
+          <span class="timing">15 minutos</span>
         </div>
-        <div class="service-card">
-          <span class="tag">Funcional</span>
-          <h3>Botón directo a WhatsApp</h3>
-          <p>Tus clientes pueden escribirte o reservar con un solo toque, sin formularios eternos ni llamadas perdidas.
-          </p>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <div class="content">
+          <h3>Diseñamos tu propuesta</h3>
+          <p>Te mostramos un primer diseño con tus colores, textos y fotos. Ajustamos lo que haga falta hasta que encaje contigo.</p>
+          <span class="timing">2–3 días</span>
         </div>
-        <div class="service-card">
-          <span class="tag">Visible</span>
-          <h3>Mapa, horario y ubicación</h3>
-          <p>Integramos Google Maps y tus horarios reales para que la gente sepa cuándo y dónde encontrarte.</p>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <div class="content">
+          <h3>Publicamos tu web</h3>
+          <p>La dejamos lista, conectada a tu WhatsApp, mapa y dominio. Revisamos juntos que todo funcione desde el móvil.</p>
+          <span class="timing">1–2 días</span>
         </div>
-        <div class="service-card">
-          <span class="tag">Rápida</span>
-          <h3>Carga en menos de 2 segundos</h3>
-          <p>Código ligero y optimizado. Nada de plugins pesados que hagan esperar a tus clientes.</p>
-        </div>
-        <div class="service-card">
-          <span class="tag">Móvil</span>
-          <h3>Pensada para el móvil primero</h3>
-          <p>Más del 80% de las visitas llegan desde el móvil. Tu web se ve perfecta ahí, siempre.</p>
-        </div>
-        <div class="service-card">
-          <span class="tag">Tuya</span>
-          <h3>Tu dominio, tus datos</h3>
-          <p>Te ayudamos a registrar tu propio dominio (tunegocio.com) y la web queda siempre bajo tu control.</p>
+      </div>
+      <div class="step">
+        <div class="num">04</div>
+        <div class="content">
+          <h3>Te acompañamos después</h3>
+          <p>Si necesitas cambiar un horario, un texto o una foto más adelante, lo hacemos sin coste durante el primer mes.</p>
+          <span class="timing">soporte incluido</span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="proceso">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Cómo trabajamos</div>
-        <h2>De la idea a tu web online, en 4 pasos</h2>
-        <p>Un proceso corto y directo. Nosotros nos encargamos de todo lo técnico, tú solo nos cuentas cómo es tu
-          negocio.</p>
+<section id="precio">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Inversión</div>
+      <h2>Precio claro, sin sorpresas</h2>
+      <p>Un precio base por proyecto, con extras opcionales si quieres llevar tu web más allá.</p>
+    </div>
+    <div class="pricing-card">
+      <div>
+        <div class="price-tag">Desde 50€<span>pago único · web entregada en 1 semana</span></div>
       </div>
-      <div class="process">
-        <div class="step">
-          <div class="num">01</div>
-          <div class="content">
-            <h3>Nos cuentas tu negocio</h3>
-            <p>Una breve llamada o mensaje: a qué te dedicas, qué servicios ofreces, horarios y qué quieres que la gente
-              vea primero.</p>
-            <span class="timing">15 minutos</span>
-          </div>
+      <ul>
+        <li>Diseño personalizado de 1 página</li>
+        <li>Botón de WhatsApp y formulario de contacto</li>
+        <li>Mapa, horarios y datos de contacto</li>
+        <li>Adaptada a móvil y ordenador</li>
+        <li>1 mes de cambios pequeños incluido</li>
+      </ul>
+    </div>
+
+    <div class="extras">
+      <div class="extras-label">Extras opcionales</div>
+      <div class="extra-row">
+        <div class="extra-info">
+          <h4>Dominio propio</h4>
+          <p>Tu web en tunegocio.com en vez de un enlace genérico. Incluye registro, configuración y renovación.</p>
         </div>
-        <div class="step">
-          <div class="num">02</div>
-          <div class="content">
-            <h3>Diseñamos tu propuesta</h3>
-            <p>Te mostramos un primer diseño con tus colores, textos y fotos. Ajustamos lo que haga falta hasta que
-              encaje contigo.</p>
-            <span class="timing">2–3 días</span>
-          </div>
-        </div>
-        <div class="step">
-          <div class="num">03</div>
-          <div class="content">
-            <h3>Publicamos tu web</h3>
-            <p>La dejamos lista, conectada a tu WhatsApp, mapa y dominio. Revisamos juntos que todo funcione desde el
-              móvil.</p>
-            <span class="timing">1–2 días</span>
-          </div>
-        </div>
-        <div class="step">
-          <div class="num">04</div>
-          <div class="content">
-            <h3>Te acompañamos después</h3>
-            <p>Si necesitas cambiar un horario, un texto o una foto más adelante, lo hacemos sin coste durante el primer
-              mes.</p>
-            <span class="timing">soporte incluido</span>
-          </div>
-        </div>
+        <div class="extra-price">12€<span>/ trimestre</span></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="precio">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Inversión</div>
-        <h2>Precio claro, sin sorpresas</h2>
-        <p>Un precio base por proyecto, con extras opcionales si quieres llevar tu web más allá.</p>
-      </div>
-      <div class="pricing-card">
-        <div>
-          <div class="price-tag">Desde 50€ y 5€ al mes por mantenimiento<span>· web entregada en 1 semana</span></div>
-        </div>
-        <ul>
-          <li>Diseño personalizado de 1 página</li>
-          <li>Botón de WhatsApp y formulario de contacto</li>
-          <li>Mapa, horarios y datos de contacto</li>
-          <li>Adaptada a móvil y ordenador</li>
-          <li>1 mes de cambios pequeños incluido</li>
-        </ul>
-      </div>
-
-      <div class="extras">
-        <div class="extras-label">Extras opcionales</div>
-        <div class="extra-row">
-          <div class="extra-info">
-            <h4>Dominio propio</h4>
-            <p>Tu web en tunegocio.com en vez de un enlace genérico. Incluye registro, configuración y renovación.</p>
-          </div>
-          <div class="extra-price">12€<span>/ trimestre</span></div>
-        </div>
-      </div>
+<section id="contacto" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Empecemos</div>
+      <h2>Cuéntanos sobre tu negocio</h2>
+      <p>Escríbenos por WhatsApp o rellena el formulario. Te respondemos en menos de 24 horas con los siguientes pasos.</p>
     </div>
-  </section>
-
-  <section id="contacto" style="border-bottom:none;">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Empecemos</div>
-        <h2>Cuéntanos sobre tu negocio</h2>
-        <p>Escríbenos por WhatsApp o rellena el formulario. Te respondemos en menos de 24 horas con los siguientes
-          pasos.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Habla directamente con nosotros</h3>
+        <p>La forma más rápida de empezar. Cuéntanos qué tipo de negocio tienes y te decimos cómo sería tu web.</p>
+        <a class="whatsapp-link" href="https://wa.me/34693005445?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mi%20web" target="_blank" rel="noopener">
+          <span class="dot"></span> Escribir por WhatsApp
+        </a>
       </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h3>Habla directamente con nosotros</h3>
-          <p>La forma más rápida de empezar. Cuéntanos qué tipo de negocio tienes y te decimos cómo sería tu web.</p>
-          <a class="whatsapp-link"
-            href="https://wa.me/34693005445?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mi%20web" target="_blank"
-            rel="noopener">
-            <span class="dot"></span> Escribir por WhatsApp
-          </a>
-        </div>
-        <form action="https://formspree.io/f/mkoaknll" method="POST">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="nombre" placeholder="Tu nombre" required>
-          <label for="business">Negocio</label>
-          <input type="text" id="business" name="negocio" placeholder="Nombre de tu negocio" required>
-          <label for="msg">Mensaje</label>
-          <textarea id="msg" name="mensaje" placeholder="Cuéntanos brevemente a qué te dedicas..." required></textarea>
-          <input type="hidden" name="_subject" value="Nuevo contacto desde Microweb">
-          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-        </form>
-      </div>
+      <form action="https://formspree.io/f/mkoaknll" method="POST">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="nombre" placeholder="Tu nombre" required>
+        <label for="business">Negocio</label>
+        <input type="text" id="business" name="negocio" placeholder="Nombre de tu negocio" required>
+        <label for="msg">Mensaje</label>
+        <textarea id="msg" name="mensaje" placeholder="Cuéntanos brevemente a qué te dedicas..." required></textarea>
+        <input type="hidden" name="_subject" value="Nuevo contacto desde Microweb">
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
-      <div class="logo">micro<span>web</span></div>
-      <div>© 2026 Microweb · Esta página es una demo del producto</div>
-    </div>
-  </footer>
+<footer>
+  <div class="wrap">
+    <div class="logo">micro<span>web</span></div>
+    <div>© 2026 Microweb · Esta página es una demo del producto</div>
+  </div>
+</footer>
 
-  <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>
