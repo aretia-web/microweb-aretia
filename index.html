@@ -3,248 +3,348 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Microweb — Webs simples para negocios reales</title>
+<title>Microweb · Webs a medida para negocios locales en Sevilla</title>
+<meta name="description" content="Diseñamos y publicamos la web de tu negocio en una semana, desde 275 €. A medida, rápida, pensada para el móvil y con WhatsApp, mapa y horarios.">
+<meta name="theme-color" content="#1F4437">
+<meta property="og:title" content="Microweb · Webs a medida para negocios locales">
+<meta property="og:description" content="Tu web profesional en una semana, desde 275 €.">
+<meta property="og:image" content="assets/img/lp-escritorio.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231F4437'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' font-style='italic' text-anchor='middle' fill='%23F6F5F0'%3Em%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<nav>
-  <div class="wrap">
-    <div class="logo">micro<span>web</span></div>
-    <button class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false">☰</button>
-    <div class="links">
-      <a href="#servicios">Servicios</a>
-      <a href="#proceso">Proceso</a>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="logo" href="#main" aria-label="Microweb, inicio">micro<span>web</span></a>
+    <nav class="mainnav" id="mainnav" aria-label="Principal">
+      <a href="#trabajos">Trabajos</a>
+      <a href="#incluye">Qué incluye</a>
       <a href="#precio">Precio</a>
-      <a href="#contacto" class="nav-cta">Hablemos</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap">
-    <div class="eyebrow">Desarrollo web · Sevilla</div>
-    <h1>Tu negocio <em>ya existe</em>.<br>Que se vea online también.</h1>
-    <p class="hero-sub">
-      Diseñamos y programamos la web de tu negocio en menos de una semana:
-      simple, rápida, y lista para que tus clientes te encuentren, vean tus
-      horarios y te escriban directamente.
-    </p>
-    <div class="hero-ctas">
-      <a href="#contacto" class="btn btn-primary">Pedir mi web →</a>
-      <a href="#servicios" class="btn btn-secondary">Ver qué incluye</a>
-    </div>
-
-    <!-- SIGNATURE ELEMENT: before/after toggle -->
-    <div class="demo-frame">
-      <div class="demo-toggle-bar">
-        <button class="active" data-view="before">sin-web.local</button>
-        <button data-view="after">tunegocio.com</button>
-      </div>
-      <div class="demo-stage">
-        <div class="demo-view active" id="view-before">
-          <div class="no-web">
-            <div class="icon">📵</div>
-            <h3>Así te encuentran ahora</h3>
-            <ul>
-              <li>Solo apareces si alguien te conoce de antes</li>
-              <li>Tus horarios están solo en un cartel en la puerta</li>
-              <li>Para reservar, tienen que llamarte por teléfono</li>
-              <li>En Google, sale primero tu competencia</li>
-            </ul>
-          </div>
-        </div>
-        <div class="demo-view" id="view-after">
-          <div class="mockup">
-            <div class="mockup-nav">
-              Bella Studio <span>tunegocio.com</span>
-            </div>
-            <div class="mockup-hero">
-              <h4>Bella Studio — Peluquería y estética</h4>
-              <p>Calle Mayor 12, Sevilla · Lun–Sáb 9:00–20:00</p>
-              <div class="mbtn">Reservar por WhatsApp</div>
-            </div>
-            <div class="mockup-rows">
-              <div><strong>Servicios</strong>Corte, color, tratamientos y manicura.</div>
-              <div><strong>Ubicación</strong>Mapa integrado y cómo llegar en bus o coche.</div>
-              <div><strong>Opiniones</strong>Reseñas reales de clientes destacadas.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <a href="#proceso">Proceso</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a class="btn btn-primary btn-sm topbar-cta" href="#contacto">Pedir presupuesto</a>
+    <button class="menu-toggle" type="button" aria-controls="mainnav" aria-expanded="false" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
   </div>
 </header>
 
-<section id="servicios">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Qué hacemos</div>
-      <h2>Una web. Bien hecha. Sin complicaciones.</h2>
-      <p>Diseñamos una landing page profesional, optimizada para todos los dispositivos y enfocada en ofrecer a los negocios locales una presencia online efectiva.</p>
-    </div>
-    <div class="services">
-      <div class="service-card">
-        <span class="tag">Diseño</span>
-        <h3>A tu medida, no una plantilla</h3>
-        <p>Colores, servicios y fotos de tu negocio. Cada web se diseña desde cero para que parezca tuya, no de una plataforma genérica.</p>
-      </div>
-      <div class="service-card">
-        <span class="tag">Funcional</span>
-        <h3>Botón directo a WhatsApp</h3>
-        <p>Tus clientes pueden escribirte o reservar con un solo toque, sin formularios eternos ni llamadas perdidas.</p>
-      </div>
-      <div class="service-card">
-        <span class="tag">Visible</span>
-        <h3>Mapa, horario y ubicación</h3>
-        <p>Integramos Google Maps y tus horarios reales para que la gente sepa cuándo y dónde encontrarte.</p>
-      </div>
-      <div class="service-card">
-        <span class="tag">Rápida</span>
-        <h3>Carga en menos de 2 segundos</h3>
-        <p>Código ligero y optimizado. Nada de plugins pesados que hagan esperar a tus clientes.</p>
-      </div>
-      <div class="service-card">
-        <span class="tag">Móvil</span>
-        <h3>Pensada para el móvil primero</h3>
-        <p>Más del 80% de las visitas llegan desde el móvil. Tu web se ve perfecta ahí, siempre.</p>
-      </div>
-      <div class="service-card">
-        <span class="tag">Tuya</span>
-        <h3>Tu dominio, tus datos</h3>
-        <p>Te ayudamos a registrar tu propio dominio (tunegocio.com) y la web queda siempre bajo tu control.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<main id="main">
 
-<section id="proceso">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Cómo trabajamos</div>
-      <h2>De la idea a tu web online, en 4 pasos</h2>
-      <p>Un proceso corto y directo. Nosotros nos encargamos de todo lo técnico, tú solo nos cuentas cómo es tu negocio.</p>
+  <!-- ===== PORTADA ===== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1><span class="h1-line">Tu negocio ya existe.</span> <span class="h1-line">Que se vea online también.</span></h1>
+        <p class="hero-sub">
+          Diseñamos y publicamos la web de tu negocio en una semana: a medida, rápida
+          en el móvil y lista para que tus clientes te encuentren, vean tu horario y te
+          escriban por WhatsApp.
+        </p>
+        <div class="hero-actions">
+          <a href="#precio" class="btn btn-primary">Calcular mi web</a>
+          <a href="#trabajos" class="btn btn-quiet">Ver un trabajo real</a>
+        </div>
+        <dl class="hero-facts">
+          <div><dt>Desde</dt><dd>275 €</dd></div>
+          <div><dt>Entrega</dt><dd>1 semana</dd></div>
+          <div><dt>Cambios incluidos</dt><dd>1 mes</dd></div>
+        </dl>
+      </div>
+
+      <div class="demo">
+        <div class="demo-bar">
+          <span class="demo-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <div class="demo-tabs" role="tablist" aria-label="Ver tu negocio">
+            <button type="button" role="tab" id="tab-before" aria-selected="false" aria-controls="view-before" tabindex="-1">Sin web</button>
+            <button type="button" role="tab" id="tab-after" aria-selected="true" aria-controls="view-after">Con Microweb</button>
+          </div>
+        </div>
+        <div class="demo-stage">
+          <div class="demo-view" id="view-before" role="tabpanel" aria-labelledby="tab-before" hidden>
+            <p class="no-web-title">Así te encuentran hoy</p>
+            <ul class="no-web">
+              <li>Solo te conoce quien ya ha pasado por la puerta</li>
+              <li>Tu horario está en un cartel que nadie ve desde casa</li>
+              <li>Para preguntar algo tienen que llamarte</li>
+              <li>En Google aparece antes tu competencia</li>
+            </ul>
+          </div>
+          <div class="demo-view" id="view-after" role="tabpanel" aria-labelledby="tab-after">
+            <img src="assets/img/lp-escritorio.webp" width="1440" height="900" alt="Portada de la web de Minimarket La Prensa, en Tomares, hecha por Microweb">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="process">
-      <div class="step">
-        <div class="num">01</div>
-        <div class="content">
+  </section>
+
+  <!-- ===== TRABAJO REAL ===== -->
+  <section class="case" id="trabajos" aria-labelledby="case-title">
+    <div class="wrap case-grid">
+      <div class="case-copy">
+        <p class="kicker">Trabajo reciente</p>
+        <h2 id="case-title">Minimarket La Prensa, Tomares</h2>
+        <p class="lead">
+          Una tienda de barrio con clientes fieles pero sin forma de enseñar lo que vende.
+          Le hicimos una web con su catálogo semanal para que los vecinos reserven desde
+          el móvil y pasen a recoger y pagar en la tienda.
+        </p>
+        <ul class="case-points">
+          <li><strong>Catálogo con reservas.</strong> Sin pagos online: la reserva llega por correo con nombre, teléfono y día de recogida.</li>
+          <li><strong>Se actualiza con un Excel.</strong> El catálogo de cada semana se sube en minutos, sin tocar el diseño.</li>
+          <li><strong>Abierto o cerrado, en directo.</strong> La portada avisa si la tienda está abierta según su horario.</li>
+          <li><strong>Su identidad, no una plantilla.</strong> El azul de su fachada y el toldo de su logotipo.</li>
+        </ul>
+      </div>
+      <div class="case-shots">
+        <figure class="shot shot-desk">
+          <img src="assets/img/lp-catalogo.webp" width="1440" height="900" loading="lazy" alt="Catálogo de productos de la web de La Prensa en un ordenador, con buscador y filtros por categoría">
+        </figure>
+        <figure class="shot shot-phone">
+          <img src="assets/img/lp-movil.webp" width="560" height="1212" loading="lazy" alt="La misma web en un móvil, con un producto añadido a la reserva">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUÉ INCLUYE ===== -->
+  <section class="included" id="incluye" aria-labelledby="included-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="included-title">Todo lo que necesita tu web, incluido en el precio base</h2>
+        <p class="lead">Una web de una página, hecha desde cero para tu negocio. Sin plantillas, sin plugins y sin cuotas obligatorias.</p>
+      </div>
+      <div class="included-grid">
+        <div class="included-group">
+          <h3>Para que te encuentren</h3>
+          <ul>
+            <li>Diseño a medida con tus colores, fotos y textos</li>
+            <li>Mapa de Google, dirección y cómo llegar</li>
+            <li>Horario siempre visible</li>
+            <li>Preparada para buscadores y con buena vista previa al compartirla</li>
+          </ul>
+        </div>
+        <div class="included-group">
+          <h3>Para que te escriban</h3>
+          <ul>
+            <li>Botón directo a WhatsApp</li>
+            <li>Formulario de contacto que llega a tu correo</li>
+            <li>Enlaces a tus redes sociales</li>
+            <li>Teléfono que se marca con un toque</li>
+          </ul>
+        </div>
+        <div class="included-group">
+          <h3>Para que funcione bien</h3>
+          <ul>
+            <li>Pensada primero para el móvil</li>
+            <li>Carga en menos de 2 segundos</li>
+            <li>Textos escritos para tus clientes</li>
+            <li>Un mes de cambios pequeños sin coste</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRECIO / CONFIGURADOR ===== -->
+  <section class="pricing" id="precio" aria-labelledby="pricing-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="pricing-title">Precio claro, sin sorpresas</h2>
+        <p class="lead">Elige lo que necesitas y verás el precio final al momento.</p>
+      </div>
+
+      <div class="configurator">
+        <div class="config-options">
+          <div class="config-base">
+            <div>
+              <h3>Web a medida</h3>
+              <p>Todo lo de la sección anterior, entregado en una semana.</p>
+            </div>
+            <p class="config-price">275 €<small>pago único</small></p>
+          </div>
+
+          <fieldset>
+            <legend>Añade lo que quieras</legend>
+
+            <label class="extra">
+              <input type="checkbox" name="extra" value="dominio" data-price="12" data-type="mes" data-label="Dominio propio">
+              <span class="extra-body">
+                <span class="extra-name">Dominio propio</span>
+                <span class="extra-desc">Tu web en tunegocio.com en vez de un enlace genérico. Registro, configuración y renovación incluidos.</span>
+              </span>
+              <span class="extra-price">12 €<small>al mes</small></span>
+            </label>
+
+            <label class="extra">
+              <input type="checkbox" name="extra" value="carrusel" data-price="65" data-type="unico" data-label="Carrusel de productos">
+              <span class="extra-body">
+                <span class="extra-name">Carrusel de productos</span>
+                <span class="extra-desc">Galería deslizable con tus productos o servicios destacados: foto, nombre y descripción breve.</span>
+              </span>
+              <span class="extra-price">65 €<small>pago único</small></span>
+            </label>
+
+            <label class="extra">
+              <input type="checkbox" name="extra" value="google" data-price="40" data-type="unico" data-label="Ficha de Google Maps">
+              <span class="extra-body">
+                <span class="extra-name">Ficha de Google Maps</span>
+                <span class="extra-desc">Creamos o completamos tu Perfil de Empresa en Google (fotos, horario, servicios y enlace a tu web) para que salgas bien en el mapa.</span>
+              </span>
+              <span class="extra-price">40 €<small>pago único</small></span>
+            </label>
+
+            <label class="extra">
+              <input type="checkbox" name="extra" value="reservas" data-price="120" data-type="unico" data-label="Catálogo con reservas">
+              <span class="extra-body">
+                <span class="extra-name">Catálogo con reservas</span>
+                <span class="extra-desc">Tus productos con buscador y filtros. El cliente reserva y lo recoge en tu local; tú recibes cada reserva por correo. Se actualiza con un Excel.</span>
+              </span>
+              <span class="extra-price">120 €<small>pago único</small></span>
+            </label>
+
+            <label class="extra">
+              <input type="checkbox" name="extra" value="revision" data-price="30" data-type="unico" data-label="Revisión total de contenido">
+              <span class="extra-body">
+                <span class="extra-name">Revisión total de contenido</span>
+                <span class="extra-desc">Repasamos y actualizamos de una vez todos los textos, fotos, precios y horarios de tu web. Puedes pedirla siempre que la necesites.</span>
+              </span>
+              <span class="extra-price">30 €<small>por revisión</small></span>
+            </label>
+          </fieldset>
+        </div>
+
+        <aside class="config-summary" aria-labelledby="summary-title">
+          <h3 id="summary-title">Tu web</h3>
+          <ul class="summary-lines" id="summary-lines"></ul>
+          <div class="summary-total">
+            <p class="summary-row"><span>Pago único</span><strong id="total-once">275 €</strong></p>
+            <p class="summary-row" id="total-month-row" hidden><span>Cada mes</span><strong id="total-month">0 €</strong></p>
+          </div>
+          <p class="visually-hidden" id="summary-live" aria-live="polite"></p>
+          <a class="btn btn-primary btn-block" id="summary-whatsapp" href="https://wa.me/34693005445" target="_blank" rel="noopener">Pedir esta web por WhatsApp</a>
+          <a class="summary-alt" href="#contacto">Prefiero escribir por el formulario</a>
+          <p class="summary-note">Precios finales, sin costes ocultos.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESO ===== -->
+  <section class="process" id="proceso" aria-labelledby="process-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="process-title">De la idea a tu web publicada, en una semana</h2>
+        <p class="lead">Nosotros nos encargamos de todo lo técnico. Tú solo nos cuentas cómo es tu negocio.</p>
+      </div>
+      <ol class="timeline">
+        <li>
+          <p class="when">Día 1</p>
           <h3>Nos cuentas tu negocio</h3>
-          <p>Una breve llamada o mensaje: a qué te dedicas, qué servicios ofreces, horarios y qué quieres que la gente vea primero.</p>
-          <span class="timing">15 minutos</span>
-        </div>
-      </div>
-      <div class="step">
-        <div class="num">02</div>
-        <div class="content">
-          <h3>Diseñamos tu propuesta</h3>
-          <p>Te mostramos un primer diseño con tus colores, textos y fotos. Ajustamos lo que haga falta hasta que encaje contigo.</p>
-          <span class="timing">2–3 días</span>
-        </div>
-      </div>
-      <div class="step">
-        <div class="num">03</div>
-        <div class="content">
-          <h3>Publicamos tu web</h3>
-          <p>La dejamos lista, conectada a tu WhatsApp, mapa y dominio. Revisamos juntos que todo funcione desde el móvil.</p>
-          <span class="timing">1–2 días</span>
-        </div>
-      </div>
-      <div class="step">
-        <div class="num">04</div>
-        <div class="content">
-          <h3>Te acompañamos después</h3>
-          <p>Si necesitas cambiar un horario, un texto o una foto más adelante, lo hacemos sin coste durante el primer mes.</p>
-          <span class="timing">soporte incluido</span>
-        </div>
-      </div>
+          <p>Una llamada o unos mensajes de 15 minutos: qué haces, qué ofreces, tu horario y qué quieres que la gente vea primero.</p>
+        </li>
+        <li>
+          <p class="when">Días 2 a 4</p>
+          <h3>Te enseñamos el diseño</h3>
+          <p>Un primer diseño con tus colores, textos y fotos. Lo ajustamos contigo hasta que encaje.</p>
+        </li>
+        <li>
+          <p class="when">Días 5 y 6</p>
+          <h3>La publicamos</h3>
+          <p>Conectada a tu WhatsApp, tu mapa y tu dominio. Revisamos juntos que todo funcione en el móvil.</p>
+        </li>
+        <li>
+          <p class="when">El mes siguiente</p>
+          <h3>Seguimos contigo</h3>
+          <p>Si cambias un horario, un texto o una foto, lo actualizamos sin coste durante el primer mes.</p>
+        </li>
+      </ol>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="precio">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Inversión</div>
-      <h2>Precio claro, sin sorpresas</h2>
-      <p>Un precio base por proyecto, con extras opcionales si quieres llevar tu web más allá.</p>
-    </div>
-    <div class="pricing-card">
+  <!-- ===== PREGUNTAS ===== -->
+  <section class="faq" id="preguntas" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
       <div>
-        <div class="price-tag">Desde 85€<span>pago único · web entregada en 1 semana</span></div>
+        <h2 id="faq-title">Preguntas frecuentes</h2>
+        <p class="lead">¿Tienes otra duda? <a href="https://wa.me/34693005445" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>.</p>
       </div>
-      <ul>
-        <li>Diseño personalizado de 1 página</li>
-        <li>Botón de WhatsApp y formulario de contacto</li>
-        <li>Mapa, horarios y datos de contacto</li>
-        <li>Adaptada a móvil y ordenador</li>
-        <li>1 mes de cambios pequeños incluido</li>
-      </ul>
+      <div class="faq-list">
+        <details>
+          <summary>¿Qué tengo que darte para empezar?</summary>
+          <p>El nombre de tu negocio, a qué te dedicas, tu horario, dirección y teléfono, y unas cuantas fotos (valen las del móvil). Si tienes logotipo, también. Los textos los escribimos nosotros a partir de lo que nos cuentes.</p>
+        </details>
+        <details>
+          <summary>¿Tengo que pagar algo cada mes?</summary>
+          <p>No es obligatorio. La web es un pago único. Solo hay cuota mensual si eliges el dominio propio (12 € al mes), que incluye el registro, la configuración y la renovación.</p>
+        </details>
+        <details>
+          <summary>¿Y si quiero cambiar algo más adelante?</summary>
+          <p>Durante el primer mes, los cambios pequeños (un horario, un texto, una foto) son gratis. Después puedes pedir una revisión total de contenido por 30 € y la dejamos al día de una vez.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto se tarda?</summary>
+          <p>Una semana desde que nos das la información. Si añades el catálogo con reservas, puede ser algún día más según el número de productos.</p>
+        </details>
+        <details>
+          <summary>¿Usáis plantillas o WordPress?</summary>
+          <p>No. Cada web se diseña y programa desde cero, con código ligero. Por eso carga rápido y no necesita actualizaciones de plugins.</p>
+        </details>
+        <details>
+          <summary>¿Trabajáis solo en Sevilla?</summary>
+          <p>Estamos en Sevilla, pero todo el proceso se puede hacer por WhatsApp y videollamada, así que trabajamos con negocios de cualquier sitio.</p>
+        </details>
+      </div>
     </div>
+  </section>
 
-    <div class="extras">
-      <div class="extras-label">Extras opcionales</div>
-      <div class="extra-row">
-        <div class="extra-info">
-          <h4>Dominio propio</h4>
-          <p>Tu web en tunegocio.com en vez de un enlace genérico. Incluye registro, configuración y renovación.</p>
+  <!-- ===== CONTACTO ===== -->
+  <section class="contact" id="contacto" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <h2 id="contact-title">Cuéntanos sobre tu negocio</h2>
+        <p class="lead">Te respondemos en menos de 24 horas con una propuesta y los siguientes pasos.</p>
+        <a class="btn btn-light" href="https://wa.me/34693005445?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mi%20web" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/mkoaknll" method="POST">
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="nombre" autocomplete="name" required>
         </div>
-        <div class="extra-price">8€<span>/ mes</span></div>
-      </div>
-      <div class="extra-row">
-        <div class="extra-info">
-          <h4>Carrusel de productos</h4>
-          <p>Galería deslizable con tus productos o servicios destacados, con foto, nombre y descripción breve.</p>
+        <div class="field">
+          <label for="business">Negocio</label>
+          <input type="text" id="business" name="negocio" placeholder="Nombre y a qué te dedicas" required>
         </div>
-        <div class="extra-price">20€<span>/ mes</span></div>
-      </div>
-      <div class="extra-row">
-        <div class="extra-info">
-          <h4>Revisión de contenido</h4>
-          <p>Actualización puntual de textos, fotos, horarios o cualquier información de tu web cuando lo necesites.</p>
+        <div class="field">
+          <label for="contact">Teléfono o correo</label>
+          <input type="text" id="contact" name="contacto" required>
         </div>
-        <div class="extra-price">10€<span>pago único</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contacto" style="border-bottom:none;">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Empecemos</div>
-      <h2>Cuéntanos sobre tu negocio</h2>
-      <p>Escríbenos por WhatsApp o rellena el formulario. Te respondemos en menos de 24 horas con los siguientes pasos.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h3>Habla directamente con nosotros</h3>
-        <p>La forma más rápida de empezar. Cuéntanos qué tipo de negocio tienes y te decimos cómo sería tu web.</p>
-        <a class="whatsapp-link" href="https://wa.me/34693005445?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mi%20web" target="_blank" rel="noopener">
-          <span class="dot"></span> Escribir por WhatsApp
-        </a>
-      </div>
-      <form action="https://formspree.io/f/mkoaknll" method="POST">
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="nombre" placeholder="Tu nombre" required>
-        <label for="business">Negocio</label>
-        <input type="text" id="business" name="negocio" placeholder="Nombre de tu negocio" required>
-        <label for="msg">Mensaje</label>
-        <textarea id="msg" name="mensaje" placeholder="Cuéntanos brevemente a qué te dedicas..." required></textarea>
+        <div class="field">
+          <label for="msg">Mensaje</label>
+          <textarea id="msg" name="mensaje" rows="4" placeholder="Qué te gustaría que tuviera tu web" required></textarea>
+        </div>
+        <input type="hidden" name="configuracion" id="config-field">
         <input type="hidden" name="_subject" value="Nuevo contacto desde Microweb">
-        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        <p class="form-config" id="form-config" hidden></p>
+        <button type="submit" class="btn btn-primary btn-block" id="contact-submit">Enviar mensaje</button>
+        <p class="form-status" id="form-status" role="status" hidden></p>
       </form>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
-<footer>
-  <div class="wrap">
-    <div class="logo">micro<span>web</span></div>
-    <div>© 2026 Microweb · Esta página es una demo del producto</div>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="logo">micro<span>web</span></p>
+    <p>Webs a medida para negocios locales. Sevilla, © <span id="year">2026</span></p>
+    <p class="footer-note">Esta web está hecha igual que la tuya: a medida, ligera y sin plantillas.</p>
   </div>
 </footer>
 
