@@ -1,5 +1,5 @@
 /* =====================================================================
-   Microweb — estilos
+   Aretia — estilos
    Serif editorial (Newsreader) + grotesca limpia (Hanken Grotesk),
    verde pino profundo sobre papel, mucho aire y pocos adornos.
    ===================================================================== */
@@ -92,10 +92,10 @@ section { padding: 112px 0; }
 }
 .topbar-inner { display: flex; align-items: center; gap: 28px; min-height: 72px; }
 .logo {
-  font-family: var(--serif); font-size: 1.6rem; font-weight: 500; letter-spacing: -0.02em;
+  font-family: var(--serif); font-size: 1.75rem; font-weight: 500; letter-spacing: -0.02em;
   color: var(--ink); text-decoration: none; line-height: 1;
 }
-.logo span { font-style: italic; color: var(--pine-2); }
+.logo span { color: var(--pine-2); }
 .mainnav { display: flex; gap: 6px; margin-left: auto; }
 .mainnav a { color: var(--ink-soft); text-decoration: none; font-weight: 500; padding: 8px 12px; border-radius: var(--r-s); }
 .mainnav a:hover { color: var(--ink); background: var(--paper-2); }
