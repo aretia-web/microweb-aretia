@@ -59,28 +59,17 @@
         </dl>
       </div>
 
-      <div class="demo">
-        <div class="demo-bar">
-          <span class="demo-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-          <div class="demo-tabs" role="tablist" aria-label="Ver tu negocio">
-            <button type="button" role="tab" id="tab-before" aria-selected="false" aria-controls="view-before" tabindex="-1">Sin web</button>
-            <button type="button" role="tab" id="tab-after" aria-selected="true" aria-controls="view-after">Con Microweb</button>
-          </div>
+      <div class="showcase">
+        <div class="showcase-tabs" role="tablist" aria-label="Ver un ejemplo según tu tipo de negocio">
+          <button type="button" role="tab" aria-selected="true" aria-controls="mock" data-biz="peluqueria">Peluquería</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="mock" data-biz="bar" tabindex="-1">Bar</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="mock" data-biz="taller" tabindex="-1">Taller</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="mock" data-biz="fisio" tabindex="-1">Fisio</button>
         </div>
-        <div class="demo-stage">
-          <div class="demo-view" id="view-before" role="tabpanel" aria-labelledby="tab-before" hidden>
-            <p class="no-web-title">Así te encuentran hoy</p>
-            <ul class="no-web">
-              <li>Solo te conoce quien ya ha pasado por la puerta</li>
-              <li>Tu horario está en un cartel que nadie ve desde casa</li>
-              <li>Para preguntar algo tienen que llamarte</li>
-              <li>En Google aparece antes tu competencia</li>
-            </ul>
-          </div>
-          <div class="demo-view" id="view-after" role="tabpanel" aria-labelledby="tab-after">
-            <img src="assets/img/lp-escritorio.webp" width="1440" height="900" alt="Portada de la web de Minimarket La Prensa, en Tomares, hecha por Microweb">
-          </div>
+        <div class="phone">
+          <div class="phone-screen" id="mock" role="tabpanel" aria-live="polite" aria-label="Ejemplo de web en un móvil"></div>
         </div>
+        <p class="showcase-note">Ejemplos de cómo quedaría. Cada web se diseña desde cero con la imagen de tu negocio.</p>
       </div>
     </div>
   </section>
@@ -301,7 +290,13 @@
     <div class="wrap contact-grid">
       <div class="contact-copy">
         <h2 id="contact-title">Cuéntanos sobre tu negocio</h2>
-        <p class="lead">Te respondemos en menos de 24 horas con una propuesta y los siguientes pasos.</p>
+        <p class="lead">Escríbenos por WhatsApp o con el formulario y empezamos.</p>
+        <p class="next-title">Qué pasa después</p>
+        <ol class="next-steps">
+          <li>Te respondemos en menos de 24 horas.</li>
+          <li>Hablamos 15 minutos sobre tu negocio y lo que necesitas.</li>
+          <li>Te enseñamos el primer diseño en pocos días.</li>
+        </ol>
         <a class="btn btn-light" href="https://wa.me/34693005445?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mi%20web" target="_blank" rel="noopener">Escribir por WhatsApp</a>
       </div>
       <form class="contact-form" id="contact-form" action="https://formspree.io/f/mkoaknll" method="POST">
@@ -325,6 +320,7 @@
         <input type="hidden" name="_subject" value="Nuevo contacto desde Microweb">
         <p class="form-config" id="form-config" hidden></p>
         <button type="submit" class="btn btn-primary btn-block" id="contact-submit">Enviar mensaje</button>
+        <p class="form-privacy">Solo usamos tus datos para responderte. No los compartimos con nadie.</p>
         <p class="form-status" id="form-status" role="status" hidden></p>
       </form>
     </div>
@@ -333,11 +329,32 @@
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <p class="logo">micro<span>web</span></p>
-    <p>Webs a medida para negocios locales. Sevilla, © <span id="year">2026</span></p>
-    <p class="footer-note">Esta web está hecha igual que la tuya: a medida, ligera y sin plantillas.</p>
+    <div class="footer-brand">
+      <p class="logo">micro<span>web</span></p>
+      <p>Webs a medida para negocios locales.<br>Sevilla, © <span id="year">2026</span></p>
+    </div>
+    <nav class="footer-nav" aria-label="Pie de página">
+      <a href="#trabajos">Trabajos</a>
+      <a href="#precio">Precio</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="footer-contact">
+      <a href="https://wa.me/34693005445" target="_blank" rel="noopener">WhatsApp 693 00 54 45</a>
+      <p class="footer-note">Esta web está hecha igual que la tuya: a medida, ligera y sin plantillas.</p>
+    </div>
   </div>
 </footer>
+
+<a class="fab-whatsapp" href="https://wa.me/34693005445?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mi%20web" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.2-.2-.3-.4-.4Z"/></svg>
+</a>
+
+<div class="price-bar" id="price-bar" aria-hidden="true">
+  <span class="price-bar-label">Tu web</span>
+  <span class="price-bar-total" id="price-bar-total">275 €</span>
+  <a href="#summary-title" class="price-bar-link" tabindex="-1">Ver resumen</a>
+</div>
 
 <script src="assets/js/main.js"></script>
 </body>
