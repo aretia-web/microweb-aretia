@@ -96,16 +96,36 @@
   /* ---------- configurador de precio ---------- */
   const boxes = $$('.configurator input[name="extra"]');
   const lines = $('#summary-lines');
+  const emptyMsg = $('#summary-empty');
   const onceEl = $('#total-once');
   const monthEl = $('#total-month');
-  const monthRow = $('#total-month-row');
   const live = $('#summary-live');
   const waBtn = $('#summary-whatsapp');
   const configField = $('#config-field');
   const formConfig = $('#form-config');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // Anima suavemente el cambio de una cifra
+  function animateNumber(el, to, format) {
+    const from = Number(el.dataset.value || to);
+    el.dataset.value = to;
+    if (reduceMotion || from === to) { el.textContent = format(to); return; }
+    const start = performance.now();
+    const dur = 380;
+    const step = (now) => {
+      const t = Math.min(1, (now - start) / dur);
+      const eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = format(Math.round(from + (to - from) * eased));
+      if (t < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+    el.classList.remove('is-bumped'); void el.offsetWidth; el.classList.add('is-bumped');
+  }
+
+  let prevKeys = new Set();
   function updateConfigurator() {
     const chosen = boxes.filter((b) => b.checked).map((b) => ({
+      key: b.value,
       label: b.dataset.label,
       price: Number(b.dataset.price),
       monthly: b.dataset.type === 'mes'
@@ -113,18 +133,19 @@
     const once = BASE_PRICE + chosen.filter((c) => !c.monthly).reduce((s, c) => s + c.price, 0);
     const monthly = chosen.filter((c) => c.monthly).reduce((s, c) => s + c.price, 0);
 
-    const all = [{ label: 'Web a medida', price: BASE_PRICE, monthly: false }, ...chosen];
-    lines.innerHTML = all.map((c) =>
-      `<li><span>${c.label}</span><span>${eur(c.price)}${c.monthly ? '/mes' : ''}</span></li>`
+    lines.innerHTML = chosen.map((c) =>
+      `<li class="${prevKeys.has(c.key) ? '' : 'is-new'}"><span>${c.label}</span><span>${eur(c.price)}${c.monthly ? '/mes' : ''}</span></li>`
     ).join('');
+    prevKeys = new Set(chosen.map((c) => c.key));
+    emptyMsg.hidden = chosen.length > 0;
 
-    onceEl.textContent = eur(once);
+    animateNumber(onceEl, once, eur);
+    animateNumber(monthEl, monthly, (n) => (n ? `${eur(n)}` : 'Sin cuota'));
     $('#price-bar-total').textContent = `${eur(once)}${monthly ? ` + ${eur(monthly)}/mes` : ''}`;
-    monthEl.textContent = `${eur(monthly)}`;
-    monthRow.hidden = monthly === 0;
     live.textContent = `Total: ${eur(once)} de pago único${monthly ? ` y ${eur(monthly)} al mes` : ''}.`;
 
-    const summary = `${all.map((c) => c.label).join(', ')}. Total: ${eur(once)}${monthly ? ` + ${eur(monthly)}/mes` : ''}`;
+    const all = ['Web a medida', ...chosen.map((c) => c.label)];
+    const summary = `${all.join(', ')}. Total: ${eur(once)}${monthly ? ` + ${eur(monthly)}/mes` : ''}`;
     const text = `Hola, quiero una web para mi negocio con: ${summary}.`;
     waBtn.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;
     configField.value = summary;
@@ -134,6 +155,8 @@
     boxes.forEach((b) => b.closest('.extra').classList.toggle('is-checked', b.checked));
   }
   boxes.forEach((b) => b.addEventListener('change', updateConfigurator));
+  // El enlace dentro de una opción no debe marcar la casilla
+  $$('.extra a').forEach((a) => a.addEventListener('click', (e) => e.stopPropagation()));
   updateConfigurator();
 
   /* ---------- barra de total en móvil ---------- */

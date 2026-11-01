@@ -124,7 +124,7 @@
           <h3>Para que te escriban</h3>
           <ul>
             <li>Botón directo a WhatsApp</li>
-            <li>Formulario de contacto que llega a tu correo</li>
+            <li>Correo electrónico visible y con un toque</li>
             <li>Enlaces a tus redes sociales</li>
             <li>Teléfono que se marca con un toque</li>
           </ul>
@@ -160,8 +160,9 @@
             <p class="config-price">275 €<small>pago único</small></p>
           </div>
 
-          <fieldset>
-            <legend>Añade lo que quieras</legend>
+          <fieldset class="extras-group">
+            <legend>Servicios mensuales</legend>
+            <p class="extras-hint">Se pagan cada mes mientras los tengas activos.</p>
 
             <label class="extra">
               <input type="checkbox" name="extra" value="dominio" data-price="12" data-type="mes" data-label="Dominio propio">
@@ -173,13 +174,27 @@
             </label>
 
             <label class="extra">
-              <input type="checkbox" name="extra" value="catalogo" data-price="65" data-type="mes" data-label="Catálogo de productos con reservas">
+              <input type="checkbox" name="extra" value="formulario" data-price="30" data-type="mes" data-label="Formulario de contacto">
+              <span class="extra-body">
+                <span class="extra-name">Formulario de contacto</span>
+                <span class="extra-desc">Tus clientes te escriben desde la web y el mensaje llega directo a tu correo. Hasta 200 mensajes al mes; si necesitas más, <a href="https://wa.me/34693005445?text=Hola%2C%20necesito%20un%20formulario%20con%20m%C3%A1s%20de%20200%20mensajes%20al%20mes" target="_blank" rel="noopener">escríbenos</a> y te hacemos un precio.</span>
+              </span>
+              <span class="extra-price">30 €<small>al mes</small></span>
+            </label>
+
+            <label class="extra">
+              <input type="checkbox" name="extra" value="catalogo" data-price="65" data-type="mes" data-label="Catálogo con reservas">
               <span class="extra-body">
                 <span class="extra-name">Catálogo de productos con reservas</span>
                 <span class="extra-desc">Tus productos con foto, nombre y precio, con buscador y filtros. El cliente los reserva desde el móvil y los recoge en tu local; tú recibes cada reserva por correo. Se actualiza con un Excel.</span>
               </span>
               <span class="extra-price">65 €<small>al mes</small></span>
             </label>
+          </fieldset>
+
+          <fieldset class="extras-group">
+            <legend>Pagos puntuales</legend>
+            <p class="extras-hint">Se pagan una sola vez.</p>
 
             <label class="extra">
               <input type="checkbox" name="extra" value="google" data-price="40" data-type="unico" data-label="Ficha de Google Maps">
@@ -202,15 +217,34 @@
         </div>
 
         <aside class="config-summary" aria-labelledby="summary-title">
-          <h3 id="summary-title">Tu web</h3>
-          <ul class="summary-lines" id="summary-lines"></ul>
-          <div class="summary-total">
-            <p class="summary-row"><span>Pago único</span><strong id="total-once">275 €</strong></p>
-            <p class="summary-row" id="total-month-row" hidden><span>Cada mes</span><strong id="total-month">0 €</strong></p>
+          <div class="summary-card">
+            <h3 id="summary-title">Tu web</h3>
+
+            <div class="summary-base">
+              <p class="summary-row"><span>Web a medida</span><span>275 €</span></p>
+              <ul class="summary-included">
+                <li>Diseño a medida y adaptado al móvil</li>
+                <li>WhatsApp, mapa y horario</li>
+                <li>Entrega en una semana</li>
+                <li>Un mes de cambios incluido</li>
+              </ul>
+            </div>
+
+            <div class="summary-extras">
+              <p class="summary-label">Extras</p>
+              <ul class="summary-lines" id="summary-lines"></ul>
+              <p class="summary-empty" id="summary-empty">Marca a la izquierda lo que quieras añadir.</p>
+            </div>
+
+            <div class="summary-total">
+              <p class="summary-row summary-row--big"><span>Pago único</span><strong id="total-once">275 €</strong></p>
+              <p class="summary-row"><span>Cada mes</span><strong id="total-month">Sin cuota</strong></p>
+            </div>
+            <p class="visually-hidden" id="summary-live" aria-live="polite"></p>
+
+            <a class="btn btn-light btn-block" id="summary-whatsapp" href="https://wa.me/34693005445" target="_blank" rel="noopener">Pedir esta web por WhatsApp</a>
+            <a class="summary-alt" href="#contacto">Prefiero escribir por el formulario</a>
           </div>
-          <p class="visually-hidden" id="summary-live" aria-live="polite"></p>
-          <a class="btn btn-primary btn-block" id="summary-whatsapp" href="https://wa.me/34693005445" target="_blank" rel="noopener">Pedir esta web por WhatsApp</a>
-          <a class="summary-alt" href="#contacto">Prefiero escribir por el formulario</a>
           <p class="summary-note">Precios finales, sin costes ocultos.</p>
         </aside>
       </div>
@@ -263,7 +297,7 @@
         </details>
         <details>
           <summary>¿Tengo que pagar algo cada mes?</summary>
-          <p>No es obligatorio. La web es un pago único. Solo hay cuota mensual si eliges el dominio propio (12 € al mes, con registro, configuración y renovación incluidos) o el catálogo de productos con reservas (65 € al mes).</p>
+          <p>No es obligatorio. La web es un pago único. Solo pagas cada mes los servicios mensuales que elijas: dominio propio (12 €), formulario de contacto (30 €, hasta 200 mensajes) o catálogo con reservas (65 €).</p>
         </details>
         <details>
           <summary>¿Y si quiero cambiar algo más adelante?</summary>
